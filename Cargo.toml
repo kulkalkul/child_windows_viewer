@@ -1,0 +1,20 @@
+[package]
+name = "child_windows_viewer"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+tui = "0.19"
+crossterm = "0.25"
+
+[dependencies.windows]
+version = "0.43.0"
+features = [
+    "Data_Xml_Dom",
+    "Win32_Foundation",
+    "Win32_Security",
+    "Win32_System_Threading",
+    "Win32_UI_WindowsAndMessaging",
+]
